@@ -1,0 +1,31 @@
+{
+  "name": "champions-league-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dist": "tsup src",
+    "start:dev": "tsx --env-file=.env src/index.ts",
+    "start:watch": "tsx watch --env-file=.env src/index.ts",
+    "start:dist": "npm run dist && node dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evelynnnie/champions-league-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evelynnnie/champions-league-api/issues"
+  },
+  "homepage": "https://github.com/evelynnnie/champions-league-api#readme",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
